@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DH - Livraria</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <header class="dh_bookshop_header">
+        <h1 class="dh_title">Digital House - Livraria</h1>
+        <div id="dh_menu">
+            <button class="dh_menu_btn"><i class="fas fa-bars"></i></button>
+            <ul id="dh_menu_list">
+                <a href="#" class="dh_menu_item">
+                    <i class="fas fa-cog"></i> Painel de Controle
+                </a>
+                <a href="#" class="dh_menu_item">
+                    <i class="fas fa-shopping-basket"></i> Minhas Compras
+                </a>
+                <a href="#" class="dh_menu_item">
+                    <i class="fas fa-heart"></i> Lista de Desejos
+                </a>
+                <a href="#" class="dh_menu_item">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </ul>
+        </div>
+    </header>
+    <main class="dh_content">
+        <section id="dh_carousel">
+            <img src="./banners/banner1.jpg" class="dh-show" alt="">
+            <img src="./banners/banner2.jpg" alt="">
+            <img src="./banners/banner3.jpg" alt="">
+            <img src="./banners/banner4.jpg" alt="">
+            <img src="./banners/banner5.jpg" alt="">
+            <div class="dh_dot_container"></div>
+        </section>
+        <section class="dh_filters">
+            <div class="dh_name_box">
+                <input type="text" id="dh_search_bar" placeholder="Nome do livro...">
+                <button id="dh_search_button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="dh_advanced_filters">
+                <select name="category" id="category">
+                    <option value="" selected="true" disabled="disabled">Selecione a categoria</option>
+                    <option value="0">TODAS AS CATEGORIAS</option>
+                    <option value="1">Desenvolvimento Pessoal</option>
+                    <option value="2">Ferramentas</option>
+                    <option value="3">Padrões de Projeto</option>
+                    <option value="4">Programação</option>
+                </select>
+                <select name="price_range" id="price_range">
+                    <option value="" selected="true" disabled="disabled">Faixa de preço</option>
+                    <option value="0">QUALQUER PREÇO</option>
+                    <option value="1">Até R$20</option>
+                    <option value="2">R$20 - R$50</option>
+                    <option value="3">R$50 - R$80</option>
+                    <option value="4">Acima de R$80</option>
+                </select>
+            </div>
+        </section>
+        <section class="dh_showcase"></section>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados - Digital House &#169;</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/37a6fc82c8.js" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+</body>
+
+</html>
